@@ -1,0 +1,27 @@
+[2022-12-04 13:29:57,096] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: coba.model manual__2022-12-04T06:29:28.843827+00:00 [queued]>
+[2022-12-04 13:29:57,100] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: coba.model manual__2022-12-04T06:29:28.843827+00:00 [queued]>
+[2022-12-04 13:29:57,100] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 13:29:57,100] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-12-04 13:29:57,100] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 13:29:57,109] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): model> on 2022-12-04 06:29:28.843827+00:00
+[2022-12-04 13:29:57,113] {standard_task_runner.py:52} INFO - Started process 7141 to run task
+[2022-12-04 13:29:57,116] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'coba', 'model', 'manual__2022-12-04T06:29:28.843827+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/AirFlowScheaduling.py', '--cfg-path', '/tmp/tmp2u7cx66t', '--error-file', '/tmp/tmppl62fq2t']
+[2022-12-04 13:29:57,116] {standard_task_runner.py:80} INFO - Job 75: Subtask model
+[2022-12-04 13:29:57,151] {task_command.py:371} INFO - Running <TaskInstance: coba.model manual__2022-12-04T06:29:28.843827+00:00 [running]> on host UbuntuPC
+[2022-12-04 13:29:57,186] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Kelompok6
+AIRFLOW_CTX_DAG_ID=coba
+AIRFLOW_CTX_TASK_ID=model
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-04T06:29:28.843827+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-04T06:29:28.843827+00:00
+[2022-12-04 13:30:14,243] {logging_mixin.py:115} INFO - [0.85259327 0.85077343 0.85063752 0.86976321 0.87887067 0.85245902
+ 0.86520947 0.85701275 0.85883424 0.86612022]
+[2022-12-04 13:30:14,359] {logging_mixin.py:115} INFO - Dengan rata-rata :  86.02273800822408  %
+[2022-12-04 13:30:14,585] {logging_mixin.py:115} INFO - Akurasi dari prediksi :  86.52585579024034  %
+[2022-12-04 13:30:14,873] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-04 13:30:14,893] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=coba, task_id=model, execution_date=20221204T062928, start_date=20221204T062957, end_date=20221204T063014
+[2022-12-04 13:30:15,264] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-04 13:30:15,272] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
